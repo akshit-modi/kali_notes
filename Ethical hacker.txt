@@ -1,48 +1,55 @@
-What is hacking?
--->hacking is 
+->In android play store, you can say as repository server.  
+->For linux 2 types reposotory server server.
+->Repository server also responsible for updates.
+-->rpm
+---->redhat
+---->fedora
+---->opensource
+-->debian
+---->.eeb
+---->ubuntu
+---->kali
+---->parrot
 
-white hat hacker
--->alpha testing
--->work in organization itself
-
-grey hat hacker
--->beta testing
--->Bug hunter
--->facebook release version and if someone hack they give them rewards.
--->Work outside company
--->They work on own rules and regulation.
-
-black hat hacker
--->offensive attack
--->britch data sell on dark web
--->attack malicious code
--->illegal
-
-annonymous group
--->political plan lick on public..
+-->blackarch supports packman 
 
 
-blue team
--->Only for
+smart-robo@smartrobo:~$
+-->smart-robo username
+-->@ to connect username and machine name
+-->smartrobo machine name
+-->: for cotinuty
+-->~you are in home directory
+-->$ normal user
 
+commands
+whoami
+@kali
+-->It gives you username.
 
-Vmware Vs vbox
-Vmware
--->Platform dependent
----->It is only for windows.
+uname
+@Linux
+-->it gives informatiob about OS/.
 
-vbox
--->Platform independent.
+pwd
+@/home/smartrobo
+-->It gives you path.
 
+ls
+-->list all files and folder.
+ls -l
+-->long list.
+-->show size, when it is created.
+ls -a
+-->list all (hidden + showable)
 
-sudo apt update
--->It will update repositories
-# -->Root user
-$ -->normal user
+clear (ctrl + l)
 
+mkdir abc
+-->Create a directory
+mkdir -p a/b/c/d
+-->create directory inside directory
 
-Convert normal user into root user.
--->If you use live then first configure password for root.
----->sudo passwd
----->Enter new UNIX password: kali
----->Retype new UNIX password: kali
+cd
+cd ..
+cd ../../..
