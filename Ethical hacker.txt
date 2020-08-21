@@ -1,0 +1,48 @@
+What is hacking?
+-->hacking is 
+
+white hat hacker
+-->alpha testing
+-->work in organization itself
+
+grey hat hacker
+-->beta testing
+-->Bug hunter
+-->facebook release version and if someone hack they give them rewards.
+-->Work outside company
+-->They work on own rules and regulation.
+
+black hat hacker
+-->offensive attack
+-->britch data sell on dark web
+-->attack malicious code
+-->illegal
+
+annonymous group
+-->political plan lick on public..
+
+
+blue team
+-->Only for
+
+
+Vmware Vs vbox
+Vmware
+-->Platform dependent
+---->It is only for windows.
+
+vbox
+-->Platform independent.
+
+
+sudo apt update
+-->It will update repositories
+# -->Root user
+$ -->normal user
+
+
+Convert normal user into root user.
+-->If you use live then first configure password for root.
+---->sudo passwd
+---->Enter new UNIX password: kali
+---->Retype new UNIX password: kali
