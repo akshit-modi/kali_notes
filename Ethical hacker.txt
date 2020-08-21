@@ -25,7 +25,7 @@ annonymous group
 blue team
 -->Only for
 
-
+------------------------------------------------------------------------------
 Vmware Vs vbox
 Vmware
 -->Platform dependent
@@ -105,3 +105,46 @@ cd
 cd ..
 cd ../../..
 --------------------------------------------------------------------------------------
+
+touch hacker.txt
+-->create empty file
+
+vim hacker2.txt
+-->create file if there is no file.
+-->Open file.
+-->q for quit
+-->w for save
+-->! not write
+-->wq save and exit
+-->q! exit without save
+-->x save & exit
+
+
+echo hii AK
+@hii ak
+-->print something.
+
+echo hi i am hacker >> hacker2.txt
+-->This will append line `hi i am hacker` inside hacker2.txt file
+---->append >>
+---->write >
+---->read 
+
+cat hacker2.txt
+-->Open file.
+
+cp <source file> <destination file>
+-->to copy the file.
+
+mv <source file> <destination file>
+-->move from one folder to another.
+
+rm <filename>
+-->remove file
+
+sudo <command name>
+-->run as root.
+-->If you want one action perform as a root then use sudo.
+
+sudo passwd
+-->It change password for root.
