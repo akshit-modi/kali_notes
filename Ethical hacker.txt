@@ -148,3 +148,35 @@ sudo <command name>
 
 sudo passwd
 -->It change password for root.
+
+
+
+ls -l 
+
+permission of the files and folders.
+1. owner side
+2. group side (LAN area)
+3. public side 
+
+r = read, w = write, x = execute
+r=4, w=2, x=1 
+d is a directory
+
+-->If you create permission using root then normal user also comes under group side.
+-->If normal user create pemission then both are owners
+
+total 0 
+-->size.
+
+
+apt list
+-->Show all packages in the system.
+
+apt show nmap
+-->It will give information about package and also gives dependencies.
+
+apt install nmap
+-->You need root access for this.
+
+apt update
+-->update repository
