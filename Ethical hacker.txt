@@ -180,3 +180,248 @@ apt install nmap
 
 apt update
 -->update repository
+
+------------------------------------------------------------------------------------------
+
+There are 2 address running on the network.
+1) logical address
+-->connect with wifi or lan cable.
+-->
+
+2) physical address.
+-->Your system address - MAC address.
+--> When you purchase NIC card manufacture put the address on the NIC card.
+-->NIC - Network Interface Card.
+-->Mac - Media Access Control address.
+-->MAC address capture by switch by the req ARP.
+-->when you connect with network with NIC card, automatically 1 req generate namely ARP (address resource protocol).
+-->ARP capture your MAC address.
+-->MAC address is read only memory.
+
+-->without ARP router don't provide you IP address.
+
+
+-->Router only understand IP address.
+-->switch only understand MAC address.
+---->Switch contains cam table.
+---->Content Addressable Memory - CAM
+
+route
+-->Give you gateway details.
+
+arp -a
+-->Show your router IP address.
+---->Gateway/router provides you NAT service.
+
+
+
+
+WireShark Demo: 
+-->Wireshark used for packet capturing.
+-->Apt install wireshark
+---->It will already installed in all the security OS.
+
+
+-->wireshark
+---->For opening wireshark GUI.
+---->click on any. 
+---->Click on any it will give you any(all) NIC card details.
+---->write arp for watching arp generate request.
+------>When you connect any device then it will show generated ARP request.
+------>sender MAC address 
+
+
+IP address
+Class A
+--> 0-126   --> 1.255.255.255
+-->Network ID - Host ID
+-->Used by biggest organization.
+Class B
+--> 128-191 --> 1.1.255.255
+-->Network ID - Host ID
+-->Used by medium organization
+Class C
+--> 192-254 --> 1.1.1.255
+-->Used by small organization.
+Class D & E
+-->Used by Isro, DRDO, NASA for research.
+
+-->First IP of Host used for identify the network.
+---->192.168.34.0 == idenify the network.
+---->You can not give this IP to anyone.
+
+-->Last IP used as a broadcast IP.
+-->There is two types of broadcast.
+1) Limited
+-->If someone connected to same LAN area and internally want to broadcast a message to all the device connected to the LAN then he has to use 255.255.255.255
+-->It is known as limited broadcast.
+2) Direct
+-->If someone from another LAN area want to broadcast to your LAN area then he has to use 201.20.30.255 (201.20.30 = Network)
+
+https://drive.google.com/file/d/145HJ5B4Ir8JcV_8Hpxu-ivSoa9IpGTdc/view?usp=drivesdk
+
+---------------------------------------------------------------
+
+
+NAT - Network Address Translation
+PAT - Port Address Translation
+
+
+NAT
+-->Convert your private IP address into public, public to private.
+
+OSI Model - Open Systems Interconnection
+--> Top to bottom
+7) Application layer
+-->Start your browser
+6) Presentation layer
+-->Format - html, doc, PNG, jpg...
+-->SSL certificate also works on this layer. 
+5) Session layer 
+4) Transport layer
+--> UDP - TCP port number.
+-->Flags used.
+3) Network layer
+2) Data link layer
+-->Work on switch.
+-->It use MAC address for identification.
+1) Physical layer
+-->Server accept your packet at first layer.
+
+
+
+
+
+Flags Used in communication.
+-->It provides reliability.
+
+syn
+-->Check server is communicate with me or not.
+Ack
+-->If server is communicate with you then send back ack.
+FIN
+-->Finish
+-->If Fin flag finish, you can confirm that is communication.
+-->No three way hand shaking.
+-->Only check server communicate or not.
+PSH
+-->Push
+-->Packet received sequentially.
+-->If push flag used then second flag first received then first first flag received.
+RST
+-->Reset
+-->If server is not communicate with you then send back RST.
+URG
+-->Urgent
+
+
+There is 2 types of service address
+1) Informal dynamic port number
+-->Client work on dynamic port
+2) Static port number
+-->Server work on static port number.
+
+
+
+-->There is two things in the packet.
+1) IP header
+2) 
+
+
+
+
+https://drive.google.com/file/d/14M-WLOG9P-zgmF-PB23SzBO-8DxBhwDe/view?usp=drivesdk
+
+----------------------------------------------------------------
+
+There is 2 types of information gaathering.
+1) Active
+-->CCollect information about employers.
+2) Passove
+-->Collect information about servers.
+
+
+
+-->Facebook.com runs on domain server.
+-->Facebook website works on host.
+
+-->If you connect both server then you need NS server.
+
+
+dnsdumpster.com
+-->It finds out depth information of server.
+-->Beta version always have vulneribbility.
+
+-->Information gathering about basic like DNS, expiry date... is not illegal.
+-->whois.net website. 
+
+
+@CVE - Common Vulnerability Exploitation
+
+g++ --version
+-->To check compiler for c++ is avaliable or not.
+
+-->Ftp server is for developer.
+-->Upload and download the file, this is the weakness.
+-->Http server is for client.
+
+
+There are three tools for information gathering.
+1) NMap
+-->Information gathering tool.
+apt install nmap
+
+->nmap -sS 20.220.32.56
+-->This is IDLE scan.
+-->syn stealth scan.
+-->Simple scan to check which ports are open and closed.
+
+->nmap -sS -sV 20.220.32.56
+-->Gives you version.
+
+->nmap -sS -sV -p 80 20.220.32.56
+->nmap -sS -sV -p 80,80,443 20.220.32.56
+->nmap -sS -sV -O -p 80,80,443 20.220.32.56
+
+2) recon-ng
+-->apt install recon-ng
+
+->recon-ng
+--> use <module name>
+-->use recon//domains-vulnerabilities/xssed
+---->show options
+---->set SOURCE <website>
+---->set SOURCE vgecg.ac.in
+------>show options
+------>run
+
+3) Harvester
+-->git clone <url>
+
+->theHarvestor --help
+->theHarvester -d vgecg.ac.in -l 25 -b all
+-> 
+
+Ghost
+-->git clone <url>
+-->./install.sh
+
+-->ghost
+---->help
+---->connect <IP> (here android mb. IP taken from sudan)
+------>shell
+------>screenshot /home/desktop
+
+Using Ghost
+-->First use shodan in browser and search for anything. Here we search for android debug.
+-->It will give you some android phone IP where debugger mode/ developer mode is active.
+-->Then use this IP in ghost and access shell of the android.
+
+https://drive.google.com/file/d/1SqCDkDIV-ns_uO5kzedOGwjrQdIYqb--/view?usp=drivesdk
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+https://drive.google.com/file/d/1kdgRuw4xhwTn4V0eLRlM6H_tvls18uTO/view?usp=drivesdk
